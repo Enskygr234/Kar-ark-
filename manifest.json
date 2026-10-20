@@ -1,0 +1,12 @@
+{
+  "name": "Kar Çarkı",
+  "short_name": "Kar Çarkı",
+  "description": "999.999.999 seviyeli Türkçe harf çarkı kelime oyunu.",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1a2e",
+  "theme_color": "#0b1a2e",
+  "lang": "tr",
+  "icons": [{ "src": "icons/ikon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

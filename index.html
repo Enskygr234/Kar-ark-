@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Kar Çarkı</title>
+  <meta name="description" content="999.999.999 seviyeli Türkçe harf çarkı kelime oyunu.">
+  <meta name="theme-color" content="#0b1a2e">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/ikon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/ikon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="kar" aria-hidden="true"></canvas>
+
+  <main id="oyun">
+    <header class="ust">
+      <div class="baslik">
+        <span class="ad">Kar Çarkı</span>
+        <span class="seviye">Seviye <b id="seviyeNo">1</b></span>
+      </div>
+      <button class="para" id="paraBtn" aria-label="Kar tanesi puanı">
+        <span class="tane">❄</span><b id="para">0</b>
+      </button>
+    </header>
+
+    <section class="tablo-alan" id="tabloAlan">
+      <div class="tablo" id="tablo"></div>
+    </section>
+
+    <div class="onizleme" id="onizleme" aria-live="polite"></div>
+
+    <section class="alt">
+      <button class="yuvarlak" id="bonusBtn" aria-label="Bonus kelimeler">
+        <span>★</span><small id="bonusSay">0</small>
+      </button>
+      <div class="cark" id="cark">
+        <svg class="cizgi" id="cizgi"></svg>
+      </div>
+      <div class="sag-tus">
+        <button class="yuvarlak" id="karistirBtn" aria-label="Harfleri karıştır"><span>⟳</span></button>
+        <button class="yuvarlak ipucu" id="ipucuBtn" aria-label="İpucu: bir harf aç">
+          <span>💡</span><small>20</small>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="bildirim" id="bildirim"></div>
+
+  <div class="perde" id="bitisPerde" hidden>
+    <div class="kart">
+      <div class="buyuk-tane">❄</div>
+      <h2 id="bitisBaslik">Harika!</h2>
+      <p id="bitisMetin"></p>
+      <button class="ana-tus" id="sonrakiBtn">Sonraki seviye</button>
+    </div>
+  </div>
+
+  <div class="perde" id="bonusPerde" hidden>
+    <div class="kart">
+      <h2>Bonus kelimeler</h2>
+      <p class="soluk">Bulmacada olmayan ama gerçek kelimeler. Her biri 2 ❄ kazandırır.</p>
+      <div class="bonus-liste" id="bonusListe"></div>
+      <button class="ana-tus" data-kapat>Tamam</button>
+    </div>
+  </div>
+
+  <div class="perde" id="bilgiPerde" hidden>
+    <div class="kart">
+      <h2>Nasıl oynanır?</h2>
+      <p>Çarktaki harflerin üstünde parmağını kaydırarak kelime yaz. Bulduğun kelimeler bulmacaya yerleşir.</p>
+      <p>Bulmacada olmayan gerçek kelimeler <b>bonus</b> sayılır ve ❄ kazandırır. Takılırsan 💡 ile bir harf aç.</p>
+      <p class="soluk">Toplam 999.999.999 seviye var. Kolay kolay bitmez.</p>
+      <button class="ana-tus" data-kapat>Başla</button>
+    </div>
+  </div>
+
+  <script src="kelimeler.js"></script>
+  <script src="uretici.js"></script>
+  <script src="oyun.js"></script>
+</body>
+</html>
