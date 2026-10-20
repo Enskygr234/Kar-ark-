@@ -4,6 +4,7 @@
 
 **999.999.999 seviyeli Türkçe harf çarkı kelime oyunu.**
 
+[![APK indir](https://img.shields.io/badge/⬇_APK_indir-Android-4fb3e0?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Enskygr234/Kar-ark-/releases/download/son-surum/KarCarki.apk)
 [![Tarayıcıda oyna](https://img.shields.io/badge/▶_Tarayıcıda_oyna-Kar_Çarkı-f0a03c?style=for-the-badge)](https://enskygr234.github.io/Kar-ark-/)
 
 </div>
@@ -30,6 +31,14 @@ Seviyeler tek tek yazılmadı. Oyun, her seviyeyi seviye numarasından **kendisi
 | 1.000+ | 6–7 | 7–10 |
 
 Kısacası bitmez. 🙂
+
+## Kurulum
+
+**Android:** Yukarıdaki **APK indir** butonuna dokun, dosyayı aç. Telefon ilk seferde "bilinmeyen kaynaklardan yükleme" izni isteyebilir.
+
+**Tarayıcı:** **Tarayıcıda oyna** butonuna dokun. Menüden "Ana ekrana ekle" dersen uygulama gibi açılır.
+
+Her yüklemeden sonra GitHub Actions yeni APK'yı kendiliğinden derler ([Capacitor](https://capacitorjs.com) ile).
 
 ## Özellikler
 
